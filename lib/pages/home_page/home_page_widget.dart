@@ -63,11 +63,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           centerTitle: false,
           elevation: 2.0,
         ),
-        body: const SafeArea(
+        body: SafeArea(
           top: true,
           child: Column(
             mainAxisSize: MainAxisSize.max,
-            children: [],
+            children: [
+              Text(
+                'Hello World',
+                style: FlutterFlowTheme.of(context).bodyMedium,
+              ),
+            ],
           ),
         ),
       ),
